@@ -11,6 +11,8 @@
             PictureBox1.Image = VB.My.Resources.Resources.photo_2024_07_24_11_00_03
         End If
 
+
+
         If (Click = 100) Then
             PictureBox1.Image = VB.My.Resources.Resources.photo_2024_07_24_11_00_03
         End If
@@ -19,6 +21,16 @@
             PictureBox1.Image = VB.My.Resources.Resources.photo_2024_07_24_11_13_37
             Label2.Text = "Mira kombat"
         End If
+
+
+
+        If (Click >= 150) Then
+            Click += 1
+        End If
+
+
+
+
 
         If (Click = 250) Then
             PictureBox1.Image = VB.My.Resources.Resources.photo_2024_07_24_11_17_17__2_
@@ -32,6 +44,37 @@
         If (Click = 550) Then
             PictureBox1.Image = VB.My.Resources.Resources.photo_2024_06_10_12_05_52
         End If
+
+
+
+        If (Click >= 550) Then
+            Click += 2
+        End If
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        If (Click >= 10) Then
+            Label4.Visible = True
+            Label3.Text = "0.000000000000000000000000000000000" + Label1.Text + " RUB"
+        Else
+            Label3.Text = "0.000" + Label1.Text + " RUB"
+        End If
+
+
+
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
